@@ -1,0 +1,25 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": ["--network=host"],
+  "remoteUser": "ubuntu",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/ubuntu/workspace/${localWorkspaceFolderBasename},type=bind,consistency=cached",
+  "workspaceFolder": "/home/ubuntu/workspace/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-dependency",
+        "redhat.vscode-xml",
+        "usernamehw.errorlens",
+        "streetsidesoftware.code-spell-checker",
+        "esbenp.prettier-vscode",
+        "EditorConfig.EditorConfig"
+      ]
+    }
+  }
+}
